@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Facebook</title>
+    
+    <style>
+
+
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: rgb(232, 233, 233);
+            padding: 0;
+            
+        }
+        .cuerpo{
+            width: 100%;
+            display: grid;
+            place-items: center; 
+        }
+        section{
+            width: 400px;
+            display: grid;
+            grid-template-rows: auto 1fr auto;          
+            
+        }
+        .estados{
+            display: grid;
+            grid-template-columns: 65px 65px 65px 65px 65px 65px; 
+        
+
+            gap: 8px;
+            margin: 12px 0 12px 0;
+            border: 0;
+            overflow: auto;
+            
+        }
+        .estado{
+            width: 65px;
+            height: 150px;
+            border-radius: 4px;
+        }
+        .nuevo-estado{
+            padding: 8px;
+            margin: 0;
+            border-radius: 8px;
+            background-color: white;
+            
+        }
+        .que-esta-pasando{
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+        }
+        .logo {
+            margin: 0;
+            width: 35px;
+            height: 35px;   
+        }
+        .input-estado {
+            width: 100%;
+            height: 24px;
+            margin: 0 4px 0 4px;
+            padding: 4px;
+            border-radius: 20px;
+            border: 0 ;
+            background-color: skyblue ; 
+        }
+        .estado-opciones{
+            display: flex;
+            justify-content: space-around;
+            margin: 8px 0;
+            padding: 0;
+            
+        }
+        .estado-opciones__textos {
+            border-radius: 10px;
+            padding:4px 12px;
+            margin: 1px;
+            background-color: rgb(232, 233, 233);
+            font-size: 12px;
+           
+        }
+        .video-salas{
+            margin: 8px 0;
+            border: 0;
+            background-color: white;
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            padding: 4px;
+           
+            
+        }
+        .video-salas-container{
+            width: 120px;
+            background-color: white;
+            margin: 4px;
+            padding: 4px;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            border-style: groove;
+            border-width: 2px;
+            
+        }
+        .video-salas-container__icono{
+            padding: 0;
+            margin: 8px;
+            justify-self: center;
+            width: 50px;
+            border-radius: 30px;
+        }
+        .video-salas-container__parrafo{
+            text-align: center;
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+        }
+        .video-salas-container__button{
+            margin: 20px 4px 4px 4px;
+            padding: 8px 10px;
+            background-color: white;
+            color: blue;
+            border-style: solid;
+            border-color: aquamarine;
+            border-width: 1px;
+            font-size: 12px;
+            border-radius: 10px;
+        }
+        .publicacion{
+            padding: 0;
+            margin: 0;
+            border-radius: 5px;
+            background-color: white;
+            
+        }
+        .publicacion__texto{
+            padding: 8px;
+            font-size: 12px;
+        }
+        .publicacion__header{
+            padding: 8px;
+            font-size: 12px;
+            display: grid;
+            grid-template-columns: 50px auto 50px;
+        }
+        .publicacion__vermas{
+            float:right;
+            font-size: 24px;
+            padding: 0;
+            margin: 0;
+
+        }
+        .publicacion__foto{
+            width: 38px;
+            border-radius: 30px;
+            border: rgb(107, 107, 225) solid 2px;
+        }
+        .publicacion__img{
+            width: 100%;
+            height: 400px;
+        }
+        .publicacion__opciones{
+            display: flex;
+            justify-content: space-between;
+            margin: 4px;
+        }
+        .publicacion__opciones__opcion{
+            border-radius: 10px;
+            padding:4px 32px;
+            margin: 1px;
+            background-color: rgb(232, 233, 233);
+            font-size: 12px;
+        }
+
+
+
+        @media(max-width:400px) {
+            section{
+               width: 370px;
+            }
+           
+        }
+        @media(max-width:330px) {
+            section{
+               width: 310px;
+            }
+           
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cuerpo">
+        <section>
+            
+            <div class="estados">
+        
+                 <img src="https://scontent.fctg1-3.fna.fbcdn.net/v/t1.6435-9/160105643_437739794198923_6858538565522892844_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGnLdwdax0R20GDVlIGg_OkBYbnKHDaRS0FhucocNpFLdbfvG6gUT9wC3hTMSRZBP0ijHYvLOe86mMdvUrXXixG&_nc_ohc=1wcRdDhYgUEAX_g3UqG&_nc_ht=scontent.fctg1-3.fna&oh=2f3c084aaf443689c50b9d983dad92ea&oe=61CCCFCE" alt="logo" class="estado">
+                 <img class="estado" src="https://scontent.fctg1-3.fna.fbcdn.net/v/t39.30808-6/260740234_6774369805936617_7672878352132400198_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeESRP2meGWJMPgqmlEI4RTjjrCOfc4q_fqOsI59zir9-oVSEQd-8eF0eEXzjZxiFMuAphGx-J7qh-6K8edjvjGx&_nc_ohc=zcFOsfV3jOkAX8-VXc6&_nc_ht=scontent.fctg1-3.fna&oh=b14f08798eff457714a51c5decad5b58&oe=61AC2B7C" alt="">
+                 <img src="https://scontent.fctg1-3.fna.fbcdn.net/v/t1.6435-9/160105643_437739794198923_6858538565522892844_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGnLdwdax0R20GDVlIGg_OkBYbnKHDaRS0FhucocNpFLdbfvG6gUT9wC3hTMSRZBP0ijHYvLOe86mMdvUrXXixG&_nc_ohc=1wcRdDhYgUEAX_g3UqG&_nc_ht=scontent.fctg1-3.fna&oh=2f3c084aaf443689c50b9d983dad92ea&oe=61CCCFCE" alt="logo" class="estado">
+                 <img class="estado" src="https://scontent.fctg1-3.fna.fbcdn.net/v/t39.30808-6/260740234_6774369805936617_7672878352132400198_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeESRP2meGWJMPgqmlEI4RTjjrCOfc4q_fqOsI59zir9-oVSEQd-8eF0eEXzjZxiFMuAphGx-J7qh-6K8edjvjGx&_nc_ohc=zcFOsfV3jOkAX8-VXc6&_nc_ht=scontent.fctg1-3.fna&oh=b14f08798eff457714a51c5decad5b58&oe=61AC2B7C" alt="">
+                 <img src="https://scontent.fctg1-3.fna.fbcdn.net/v/t1.6435-9/160105643_437739794198923_6858538565522892844_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGnLdwdax0R20GDVlIGg_OkBYbnKHDaRS0FhucocNpFLdbfvG6gUT9wC3hTMSRZBP0ijHYvLOe86mMdvUrXXixG&_nc_ohc=1wcRdDhYgUEAX_g3UqG&_nc_ht=scontent.fctg1-3.fna&oh=2f3c084aaf443689c50b9d983dad92ea&oe=61CCCFCE" alt="logo" class="estado">
+                 <img class="estado" src="https://scontent.fctg1-3.fna.fbcdn.net/v/t39.30808-6/260740234_6774369805936617_7672878352132400198_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeESRP2meGWJMPgqmlEI4RTjjrCOfc4q_fqOsI59zir9-oVSEQd-8eF0eEXzjZxiFMuAphGx-J7qh-6K8edjvjGx&_nc_ohc=zcFOsfV3jOkAX8-VXc6&_nc_ht=scontent.fctg1-3.fna&oh=b14f08798eff457714a51c5decad5b58&oe=61AC2B7C" alt="">
+                
+            </div>
+
+            <div class="nuevo-estado">
+                <div class="que-esta-pasando">
+                    <img  class="logo" src="./icons/bt_add_to_cart.svg" alt="">
+                    <input type="text" name="" id="" class="input-estado" placeholder="Que estas pensando">
+                    
+                </div>
+                <div class="estado-opciones">
+                    <p class="estado-opciones__textos">Crear un video</p>
+                    <p class="estado-opciones__textos">Foto video</p>
+                    <p class="estado-opciones__textos">Sentimiento/Actividad</p>
+                </div>
+            </div>
+
+            <div class="video-salas">
+
+                <div class="video-salas-container">
+                    <img src="https://scontent.fctg1-3.fna.fbcdn.net/v/t1.6435-9/160105643_437739794198923_6858538565522892844_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGnLdwdax0R20GDVlIGg_OkBYbnKHDaRS0FhucocNpFLdbfvG6gUT9wC3hTMSRZBP0ijHYvLOe86mMdvUrXXixG&_nc_ohc=1wcRdDhYgUEAX_g3UqG&_nc_ht=scontent.fctg1-3.fna&oh=2f3c084aaf443689c50b9d983dad92ea&oe=61CCCFCE" alt="logo-videollamada" class="video-salas-container__icono">
+
+                    <p class="video-salas-container__parrafo">Nombre perfil</p>
+                    <button class="video-salas-container__button">Saludar</button>
+                    
+                </div>
+
+                <div class="video-salas-container">
+                    <img src="https://scontent.fctg1-3.fna.fbcdn.net/v/t1.6435-9/160105643_437739794198923_6858538565522892844_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGnLdwdax0R20GDVlIGg_OkBYbnKHDaRS0FhucocNpFLdbfvG6gUT9wC3hTMSRZBP0ijHYvLOe86mMdvUrXXixG&_nc_ohc=1wcRdDhYgUEAX_g3UqG&_nc_ht=scontent.fctg1-3.fna&oh=2f3c084aaf443689c50b9d983dad92ea&oe=61CCCFCE" alt="logo-videollamada" class="video-salas-container__icono">
+
+                    <p class="video-salas-container__parrafo">Jonathan Diaz</p>
+                    <button class="video-salas-container__button">Saludar</button>
+                    
+                </div>
+
+                <div class="video-salas-container">
+                    <img src="https://scontent.fctg1-3.fna.fbcdn.net/v/t1.6435-9/160105643_437739794198923_6858538565522892844_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGnLdwdax0R20GDVlIGg_OkBYbnKHDaRS0FhucocNpFLdbfvG6gUT9wC3hTMSRZBP0ijHYvLOe86mMdvUrXXixG&_nc_ohc=1wcRdDhYgUEAX_g3UqG&_nc_ht=scontent.fctg1-3.fna&oh=2f3c084aaf443689c50b9d983dad92ea&oe=61CCCFCE" alt="logo-videollamada" class="video-salas-container__icono">
+                
+                    <p class="video-salas-container__parrafo">Nombre Perfil</p>
+                    <button class="video-salas-container__button">Saludar</button>
+                    
+                </div>
+
+               
+
+            </div>
+
+            <div class="publicacion">
+                <div class="publicacion__header">
+                    <img  class="publicacion__foto" src="https://scontent.fctg1-3.fna.fbcdn.net/v/t1.6435-9/160105643_437739794198923_6858538565522892844_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGnLdwdax0R20GDVlIGg_OkBYbnKHDaRS0FhucocNpFLdbfvG6gUT9wC3hTMSRZBP0ijHYvLOe86mMdvUrXXixG&_nc_ohc=1wcRdDhYgUEAX_g3UqG&_nc_ht=scontent.fctg1-3.fna&oh=2f3c084aaf443689c50b9d983dad92ea&oe=61CCCFCE" alt="fotodeperfil" >
+
+                    <p class="publicacion__usuario">Aprende Ingles</p>
+                    <p class="publicacion__vermas">...</p>
+
+                </div>
+
+                <p class="publicacion__texto">
+
+                    Llegó tu lunes favorito 😜. Aprovecha este Cyber Monday con 75% OFF 🔥 en tu curso de inglés y adelántate a tu meta de ser bilingüe YA. Aprende con:  
+                    <br>
+                    💻 Clases en vivo ILIMITADAS
+                    <br> 🗽 Profesores nativos
+                    <br> 👌 Preparación para IELTS, TOEFL y TOEIC
+                    <br> 📱 Acompañamiento vía WhatsApp 
+                    <br> ✔️ Plan Personalizado
+                    <br> 💼 Inglés profesional
+
+
+                </p>
+                <img class="publicacion__img" src="../imagenes/260821941_23848738951850596_3581051968354323478_n.png.jpg" alt="foto-de-publicacion01">
+
+                <div class="publicacion__opciones">
+                    <p class="publicacion__opciones__opcion">Me gusta</p>
+                    <p class="publicacion__opciones__opcion">Comentar</p>
+                    <p class="publicacion__opciones__opcion">Compartir</p>
+                </div>
+            </div>
+            
+            <div class="publicacion">
+                <div class="publicacion__header">
+                    <img  class="publicacion__foto" src="https://scontent.fctg1-3.fna.fbcdn.net/v/t1.6435-9/160105643_437739794198923_6858538565522892844_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGnLdwdax0R20GDVlIGg_OkBYbnKHDaRS0FhucocNpFLdbfvG6gUT9wC3hTMSRZBP0ijHYvLOe86mMdvUrXXixG&_nc_ohc=1wcRdDhYgUEAX_g3UqG&_nc_ht=scontent.fctg1-3.fna&oh=2f3c084aaf443689c50b9d983dad92ea&oe=61CCCFCE" alt="fotodeperfil" >
+
+                    <p class="publicacion__usuario">Aprede ingles</p>
+                    <p class="publicacion__vermas">...</p>
+
+                </div>
+
+                <p class="publicacion__texto">
+
+                    Llegó tu lunes favorito 😜. Aprovecha este Cyber Monday con 75% OFF 🔥 en tu curso de inglés y adelántate a tu meta de ser bilingüe YA. Aprende con:  
+                    <br>
+                    💻 Clases en vivo ILIMITADAS
+                    <br> 🗽 Profesores nativos
+                    <br> 👌 Preparación para IELTS, TOEFL y TOEIC
+                    <br> 📱 Acompañamiento vía WhatsApp 
+                    <br> ✔️ Plan Personalizado
+                    <br> 💼 Inglés profesional
+
+
+                </p>
+                <img class="publicacion__img" src="../imagenes/260821941_23848738951850596_3581051968354323478_n.png.jpg" alt="foto-de-publicacion01">
+
+                <div class="publicacion__opciones">
+                    <p class="publicacion__opciones__opcion">Me gusta</p>
+                    <p class="publicacion__opciones__opcion">Comentar</p>
+                    <p class="publicacion__opciones__opcion">Compartir</p>
+                </div>
+            </div>
+
+            <div class="publicacion">
+                <div class="publicacion__header">
+                    <img  class="publicacion__foto" src="https://scontent.fctg1-3.fna.fbcdn.net/v/t1.6435-9/160105643_437739794198923_6858538565522892844_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGnLdwdax0R20GDVlIGg_OkBYbnKHDaRS0FhucocNpFLdbfvG6gUT9wC3hTMSRZBP0ijHYvLOe86mMdvUrXXixG&_nc_ohc=1wcRdDhYgUEAX_g3UqG&_nc_ht=scontent.fctg1-3.fna&oh=2f3c084aaf443689c50b9d983dad92ea&oe=61CCCFCE" alt="fotodeperfil" >
+
+                    <p class="publicacion__usuario">Aprende Ingles</p>
+                    <p class="publicacion__vermas">...</p>
+
+                </div>
+
+                <p class="publicacion__texto">
+
+                    Llegó tu lunes favorito 😜. Aprovecha este Cyber Monday con 75% OFF 🔥 en tu curso de inglés y adelántate a tu meta de ser bilingüe YA. Aprende con:  
+                    <br>
+                    💻 Clases en vivo ILIMITADAS
+                    <br> 🗽 Profesores nativos
+                    <br> 👌 Preparación para IELTS, TOEFL y TOEIC
+                    <br> 📱 Acompañamiento vía WhatsApp 
+                    <br> ✔️ Plan Personalizado
+                    <br> 💼 Inglés profesional
+
+
+                </p>
+                <img class="publicacion__img" src="../imagenes/260821941_23848738951850596_3581051968354323478_n.png.jpg" alt="foto-de-publicacion01">
+
+                <div class="publicacion__opciones">
+                    <p class="publicacion__opciones__opcion">Me gusta</p>
+                    <p class="publicacion__opciones__opcion">Comentar</p>
+                    <p class="publicacion__opciones__opcion">Compartir</p>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+    
+</body>
+</html>

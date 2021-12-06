@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan DEV </title>
+    <style>
+         body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+       .seccion{
+            width: 100%;
+            place-items: center;
+            display: grid;
+                        
+        }
+        .container{
+            display: grid;
+             grid-template-columns: 1fr 1fr;
+             width: 800px;
+             background-color: chocolate;
+             padding: 40px 0;
+            
+        }
+        .perfil{
+            padding: 40px;
+            width: 400px;
+            display: grid;
+            place-items: center;
+        }
+        .perfil-descripcion__datos{
+            justify-content: left;
+        }
+        .perfil-descripcion__front{
+            font-size: 16px;
+            line-height: 2px;
+            justify-content: left;
+        }
+
+        .perfil-descripcion__nombre{
+            font-size: 36px;
+            padding-top: 30px;
+        }
+        .perfil-descripcion__titulo{
+            font-size: 26px;
+            padding-top: 0px;
+            margin: 0;
+        }
+        .perfil-descripcion__boton{
+            color: white;
+            background-color: rgb(41, 79, 4);
+            padding: 8px;
+            border: 0;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .imagen-contenedor{
+            display: grid;
+            place-items: center;
+        }
+        .perfil-fotografia{
+            width: 200px;
+            border-radius: 100px;
+            border: chartreuse solid 3px ;
+        }
+        .tecnologia-contenedores{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            padding: 2px;
+            
+        }
+        .tecnologia-contenido{
+            background-color: cornsilk;
+            padding: 8px;
+            margin: 8px;
+        }
+        .tecnologia-contenido__imagen{
+            max-width: 350px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav></nav>
+
+    <section class="seccion" style="background-color: chocolate;">
+        <div class="container">
+            <div class="perfil">
+                <div class="perfil-descripcion__datos">
+                    <p class="perfil-descripcion__front">Front End Developer</p>
+                    <strong class="perfil-descripcion__nombre">Jonathan Diaz</strong>
+                    <p class="perfil-descripcion__titulo">Perfil</p>
+                    <p class="perfil-descripcion__perfil">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error porro nam officiis eos explicabo at, pariatur doloremque totam rerum fuga iure quae, possimus illum quaerat voluptatibus, quos corrupti! Accusantium, vero?</p>
+                    <button class="perfil-descripcion__boton"><a href="#tecnologias"> Conoce mis habilidades </a></button>
+
+
+                </div>
+                
+            </div>
+            <div class="imagen-contenedor">
+                <img class="perfil-fotografia" src="./imagenes/1609249385633.jpg" alt="">
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="tecnologias" class="seccion" style="background-color: blanchedalmond;">
+        <div class="container"style="background-color: blanchedalmond;">
+           
+            <div class="tecnologia-contenedores">
+               <div class="tecnologia-contenido">
+                   <p>Estructura Web</p>
+                   <img class="tecnologia-contenido__imagen" src="./imagenes/http.png" alt="http"><br>
+                   <strong>Http</strong>
+                   
+                   <p>Creacion de formularios, manejo de metadatos como titulo, descripcion, y palabras claves, publicación de textos, imagenes, videos, mapas y frames, y menejo de textos con tildes </p>
+               </div>
+
+               <div class="tecnologia-contenido">
+                   <p>Hojas de estilo</p>
+                   <img class="tecnologia-contenido__imagen" src="./imagenes/css.png" alt="css"><br>
+                <strong>Css</strong>
+                <p>Manejo de grid y flex layout, diseño de cajas, textos, e imagenes. Utilizo arquitecturas de diseño como BEM, atomic design, oocss y orden de estilos. Menejo de pseucdoclases y pseudoelementos</p>
+            </div>
+
+            <div class="tecnologia-contenido">
+                <p>Control de versiones</p>
+                <img src="./imagenes/git.jpg" alt="Git" class="tecnologia-contenido__imagen"> <br>
+                <strong>Git y GitHub</strong>
+                <p>Creación de repositorios locales y remotos, control del estado y modificación de los archivos, manejo de las ramas, control de errores,y  manejo de conexiones ssh, </p>
+            </div>
+
+
+           </div>
+
+           <div class="tecnologia-contenedores">
+            <div class="tecnologia-contenido">
+                <p>Aplicaciones Web</p>
+                <img src="./imagenes/react.png" alt="react" class="tecnologia-contenido__imagen">
+                <strong>React.JS</strong>
+                <p>Manejo de estado de las aplicaciones, interacción con apis, renderización de contenido, manejo de componentes, uso de redux.</p>
+            </div>
+
+            <div class="tecnologia-contenido">
+                <p>Lenguaje de programación</p>
+                <img src="./imagenes/js.png" alt="js" class="tecnologia-contenido__imagen"><br>
+                <strong>JavaScript</strong>
+                <p>Menejo del DOM, estructura de datos, y creación de funcionalidades que mejoran la experiencia de usuario utilizando node y react.js</p>
+            </div>
+
+            <div class="tecnologia-contenido">
+                <p>Backend con Node.js</p>
+                <img src="./imagenes/express.jpg" alt="express" class="tecnologia-contenido__imagen">
+                <strong>Express.js</strong>
+                <p>Creación de Api rest, creación del servidor, conexión a bases de datos, control de errores, creación de JWT para la autenticación de usuario, encriptación de contraseñas</p>
+            </div>
+
+        </div>
+            
+        </div>
+
+    </section>
+</body>
+</html>
