@@ -17,6 +17,13 @@
             display: grid;
                         
         }
+        @media(max-width:400){
+            .container{
+                width: 350px;
+            }
+        }
+
+
         .container{
             display: grid;
              grid-template-columns: 1fr 1fr;
@@ -49,6 +56,7 @@
             padding-top: 0px;
             margin: 0;
         }
+       
         .perfil-descripcion__boton{
             color: white;
             background-color: rgb(41, 79, 4);
@@ -57,6 +65,10 @@
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
+        }
+        .color-boton{
+            color: white;
+            text-decoration: none;
         }
         .imagen-contenedor{
             display: grid;
@@ -95,8 +107,11 @@
                     <p class="perfil-descripcion__front">Front End Developer</p>
                     <strong class="perfil-descripcion__nombre">Jonathan Diaz</strong>
                     <p class="perfil-descripcion__titulo">Perfil</p>
-                    <p class="perfil-descripcion__perfil">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error porro nam officiis eos explicabo at, pariatur doloremque totam rerum fuga iure quae, possimus illum quaerat voluptatibus, quos corrupti! Accusantium, vero?</p>
-                    <button class="perfil-descripcion__boton"><a href="#tecnologias"> Conoce mis habilidades </a></button>
+                    <p class="perfil-descripcion__perfil">
+                       Construyo aplicaciones web que se adaptan a todos los dispositivos, con diseños atractivos. 
+                       Creo aplicaciones avanzadas adaptadas a las necesidades de los clientes.
+                    </p>
+                    <button class="perfil-descripcion__boton"><a href="#tecnologias" class="color-boton"> Conoce mis habilidades </a></button>
 
 
                 </div>
